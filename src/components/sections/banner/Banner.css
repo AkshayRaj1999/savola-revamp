@@ -1,0 +1,28 @@
+.c-item{
+    height: 880px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+}
+.carousel-contents h5{
+    color: var( --subhead-text);
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 126px;
+}
+.carousel-contents p{
+    text-align: center;
+    font-size: 20px;
+    color: var(--main-text);
+    font-weight: 400;
+    line-height: 27.2px;
+    max-width: 987px;
+}
