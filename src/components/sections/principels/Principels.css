@@ -1,0 +1,35 @@
+.principels-wrapper{
+    padding: 120px 0 151px 0;
+}
+.principels-wrapper span{
+    color: var(--subhead-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    position: relative;
+}
+.principels-wrapper span::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 1px;
+    background-color: var(--subhead-text);
+    margin-left: 15px; 
+}
+.principels-wrapper h3{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    color: var(--main-head-text);
+    margin-top: 13px;
+    margin-bottom: 0 !important;
+}
+.pricipels-card-wrapper{
+    display: flex;
+    gap: 24px;
+    padding-top: 52px;
+    justify-content: space-between;
+}

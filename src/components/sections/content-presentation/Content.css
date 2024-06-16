@@ -1,0 +1,40 @@
+.contentimage-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .contentimage-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contentimage-wrapper::after {
+    content: url(../../../images/icons/playb.png);
+    display: block;
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-153%, -75%);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .contentimage-wrapper::after:hover {
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(99, 197, 183, 0.56);
+    -moz-box-shadow: 0px 0px 25px 2px rgba(99, 197, 183, 0.56);
+    box-shadow: 0px 0px 25px 2px rgba(99, 197, 183, 0.56);
+  }
+  .contentimage-wrapper::before{
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }

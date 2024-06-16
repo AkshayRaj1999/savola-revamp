@@ -1,0 +1,21 @@
+.share-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.share-wrapper h3{
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 600;
+    color: var(--main-head-text);
+}
+.ShareImage-conatiner{
+    width: 100%;
+    height: 446px;
+    margin-top: 40px;
+}
+.ShareImage-conatiner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
