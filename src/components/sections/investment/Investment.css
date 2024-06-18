@@ -1,0 +1,117 @@
+.investment-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.investmentCard-1 {
+    padding: 28px 24px 28px 24px;
+    border: 1px solid #B0B0B0;
+    background-color: #fff;
+}
+
+.investmentCard-2 .card-bodi img,
+.investmentCard-1 .card-bodi img {
+    width: 45px;
+    height: 47.1px;
+}
+
+.investmentCard-1 .card-bodi .card-titlez {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: var(--main-head-text);
+    margin-bottom: 12px;
+}
+
+.investmentCard-1 .card-bodi .card-contentz {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--main-p-text);
+    max-width: 348px;
+    margin-bottom: 12px;
+}
+
+.investmentCard-1 .card-bodi h6 a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--subhead-text);
+}
+
+.investmentCard-2 {
+    padding: 28px 24px 28px 24px;
+    border: 1px solid #B0B0B0;
+    background-color: var(--subhead-text);
+}
+
+.investmentCard-2 .card-bodi .card-titlez {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: var(--main-text);
+    margin-bottom: 12px;
+}
+
+.investmentCard-2 .card-bodi .card-contentz {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--main-text);
+    max-width: 348px;
+    margin-bottom: 12px;
+}
+
+.investmentCard-2 .card-bodi h6 a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--main-text);
+}
+
+.investment-top-content-wrapper span {
+    color: var(--subhead-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    position: relative;
+}
+
+.investment-top-content-wrapper span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: var(--subhead-text);
+    margin-left: 15px;
+}
+
+.investment-top-content-wrapper h3 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    color: var(--main-head-text);
+    margin-top: 13px;
+    margin-bottom: 0 !important;
+}
+
+.investment-top-content-wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: var(--main-head-text);
+    max-width: 984px;
+    margin-top: 18px;
+    margin-bottom: 52px;
+}
