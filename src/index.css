@@ -1,8 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --main-text: #ffff;
   --subhead-text: #63C5B7;
@@ -10,11 +11,20 @@
   --main-p-text: #616161;
 }
 
-ul{
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #63C5B7;
+}
+
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-body{
-  font-family: Poppins,sans-serif;
+
+body {
+  font-family: Poppins, sans-serif;
 }

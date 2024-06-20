@@ -6,6 +6,7 @@ import Principels from './principels/Principels'
 import Share from './share/Share'
 import RecentNews from './recent-news/RecentNews'
 import Investment from './investment/Investment'
+import Parallax from './parallax/Parallax'
 
 function Section() {
   return (
@@ -17,6 +18,7 @@ function Section() {
     <Investment/>
     <Share/>
     <RecentNews/>
+    <Parallax/>
     </>
   )
 }
