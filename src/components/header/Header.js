@@ -1,10 +1,22 @@
 import React from "react";
+import { useState } from "react";
 import "./Header.css";
 import language from "../../images/icons/languge.png";
 import search from "../../images/icons/search.png";
 import savola from "../../images/images/savola-logo-dark 2.png";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setTimeout(() => {
+      setIsVisible(false);
+    }, "2000");
+  };
   return (
     <>
       <header className="container-fluid">
@@ -35,7 +47,18 @@ function Header() {
                 <ul className="navbar-ul">
                     <li><img src={savola} alt="savola-logo" /></li>
                     <li>Home</li>
-                    <li>About us</li>
+                    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>About us</li>
+                    {isVisible &&(
+                    <div className="about-us-drop-down">
+                      <div className="about-us-drop-down-elements">
+                        <a href="https://www.savola.com/en">Option 1</a>
+                        <a href="https://www.savola.com/en">Option 2</a>
+                        <a href="https://www.savola.com/en">Option 3</a>
+                        <a href="https://www.savola.com/en">Option 4</a>
+                        <a href="https://www.savola.com/en">Option 5</a>
+                      </div>
+                    </div>
+                    )}
                     <li>Investment</li>
                     <li>Rights Issue and Distribution</li>
                     <li>Investor Relations</li>

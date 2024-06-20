@@ -4,6 +4,7 @@ import ShareImage from "../../../images/images/shareImage.png";
 
 function Share() {
   return (
+    <section>
     <div className="container">
       <div className="share-wrapper">
       <h3>Share Price</h3>
@@ -12,6 +13,7 @@ function Share() {
       </div>
       </div>
     </div>
+    </section>
   );
 }
 

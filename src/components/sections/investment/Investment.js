@@ -36,6 +36,7 @@ function Investment() {
     },
   ];
   return (
+    <section>
     <div className="container">
       <div className="investment-wrapper">
         <div className="investment-top-content-wrapper">
@@ -64,6 +65,7 @@ function Investment() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

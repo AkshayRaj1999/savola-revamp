@@ -27,6 +27,7 @@ function Principels() {
     },
   ];
   return (
+    <section>
     <div className="container">
       <div className="principels-wrapper">
         <span>Principles</span>
@@ -38,6 +39,7 @@ function Principels() {
         </div>
       </div>
     </div>
+    </section>  
   );
 }
 

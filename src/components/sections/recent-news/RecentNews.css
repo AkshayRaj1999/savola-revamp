@@ -1,22 +1,24 @@
-.recent-news-wrapper span{ 
-color: var(--subhead-text);
-font-size: 16px;
-font-weight: 700;
-line-height: 12px;
-position: relative;
+.recent-news-wrapper span {
+    color: var(--subhead-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    position: relative;
 }
-.recent-news-wrapper span::after{
+
+.recent-news-wrapper span::after {
     content: "";
     position: absolute;
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
-    width: 50px; 
+    width: 50px;
     height: 1px;
     background-color: var(--subhead-text);
-    margin-left: 15px; 
+    margin-left: 15px;
 }
-.recent-news-wrapper h3{
+
+.recent-news-wrapper h3 {
     font-size: 36px;
     line-height: 42px;
     font-weight: 600;
@@ -24,11 +26,102 @@ position: relative;
     margin-top: 13px;
     margin-bottom: 0 !important;
 }
-.recent-news-wrapper p{
+
+.recent-news-wrapper p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     max-width: 724px;
     color: #777777;
     margin: 18px 0 0 0;
+}
+
+.NewsCardWrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 85px 0 55px 0;
+}
+
+.NewsCard {
+    padding: 35px 20px 35px 25px;
+    position: relative;
+}
+
+
+.NewsCard .card-bodi .CardDate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 12px;
+    background-color: var(--subhead-text);
+    color: var(--main-text);
+    box-shadow: 6px 5px 18px 0px #00000036;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewsCard .card-bodi .CardDate h4 {
+    font-size: 15.56px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 0;
+}
+
+.NewsCard .card-bodi .CardDate h5 {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20.63px;
+    margin-bottom: 0;
+}
+
+.NewsCard .card-bodi h2 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24.38px;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 0;
+}
+
+.NewsCard .card-bodi h2::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: var(--subhead-text);
+    top: 0;
+    left: 0;
+    transform: translateY(-3px);
+    margin-right: 10px;
+}
+
+.NewsCard .card-bodi p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 317px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.NewsCard .card-bodi h6{
+    margin: 0;
+}
+.NewsCard .card-bodi h6 a {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: var(--subhead-text);
+    position: relative;
+}
+.NewsCard .card-bodi h6::after{
+    content:"\2192";
+    position: absolute;
+    color: var(--subhead-text);
+    margin-left: 5px;
+    font-weight: 600;
 }
